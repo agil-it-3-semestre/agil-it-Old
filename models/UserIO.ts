@@ -1,3 +1,5 @@
+import  { UserEN } from '../enum/UserEN';
+
 export class UserIO{
   private Id                  : number;
   private Name                : string;

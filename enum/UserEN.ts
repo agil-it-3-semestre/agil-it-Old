@@ -1,4 +1,4 @@
-enum UserEN {
+export enum UserEN {
   Administrator,
   MaintainerLeader,
   Maintainer,
