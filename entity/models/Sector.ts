@@ -1,3 +1,5 @@
+import { User } from "./User";
+
 export class Sector {
   private id            : number|undefined;
   private description   : string = '';
