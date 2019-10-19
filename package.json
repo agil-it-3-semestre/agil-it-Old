@@ -1,0 +1,21 @@
+{
+  "name": "agil-it",
+  "version": "1.0.0",
+  "description": "Agil-It",
+  "scripts": {
+    "init": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agil-it/agil-it.git"
+  },
+  "author": "Agil-It Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agil-it/agil-it/issues"
+  },
+  "homepage": "https://github.com/agil-it/agil-it#readme",
+  "dependencies": {
+    "typescript": "^3.6.4"
+  }
+}
