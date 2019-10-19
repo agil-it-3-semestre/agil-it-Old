@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/agil-it/agil-it#readme",
   "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.20",
     "typescript": "^3.6.4"
   }
 }

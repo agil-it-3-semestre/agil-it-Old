@@ -1,3 +1,5 @@
+import { User } from "./User";
+
 export class MachineType {
   private id            : number|undefined;
   private integrationID : string = '';
