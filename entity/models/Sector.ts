@@ -1,13 +1,41 @@
+import {Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn} from "typeorm";
 import { User } from "./User";
 
+@Entity()
 export class Sector {
+  
+  @PrimaryGeneratedColumn()
   private id            : number|undefined;
+
+  @Column()
   private description   : string = '';
+  
+  @Column()
   private integrationID : string = '';
-  private createdAt     : Date|undefined;
-  private createdBy     : User|undefined;
-  private updatedAt     : Date|undefined;
-  private updatedBy     : User|undefined;
+  
+  @CreateDateColumn()
+  protected createdAt   : Date|undefined;
+
+  
+  @ManyToOne(
+    (type) => User,
+    (user) => user.getId,
+    { nullable: false },
+  )
+  @JoinColumn()
+  createdBy: User | undefined
+
+  @UpdateDateColumn()
+  protected updatedAt   : Date|undefined;
+
+  @ManyToOne(
+    (type) => User,
+    (user) => user.getId,
+    { nullable: false },
+  )
+  @JoinColumn()
+  updatedBy: User | undefined
+
 
   constructor(){
 
