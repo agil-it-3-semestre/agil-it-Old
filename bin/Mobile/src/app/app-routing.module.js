@@ -18,8 +18,12 @@ const router_1 = require("@angular/router");
 const routes = [
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'login',
         pathMatch: 'full'
+    },
+    {
+        path: 'login',
+        loadChildren: './login/login.module#LoginPageModule'
     },
     {
         path: 'home',

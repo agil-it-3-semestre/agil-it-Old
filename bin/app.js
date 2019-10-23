@@ -11,7 +11,7 @@ const options = {
     database: "agilit",
     logging: ["query", "error"],
     synchronize: true,
-    entities: [__dirname + "\\entity\\models\\*.js"]
+    entities: [__dirname + "\\entity\\models\\*.ts"]
 };
 typeorm_1.createConnection(options).then(connection => {
     console.log(`CONECTOU SEUS SHOW`);
